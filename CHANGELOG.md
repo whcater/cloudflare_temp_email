@@ -96,7 +96,7 @@ UI 部署 worker 需要点击 Settings -> Runtime, 修改 Compatibility flags, �
 - feat: worker 增加 `ADDRESS_CHECK_REGEX`, address name 的正则表达式, 只用于检查，符合条件将通过检查
 - fix: UI 修复登录页面 tab 激活图标错位
 - fix: UI 修复 admin 页面刷新弹框输入密码的问题
-- feat: support `Oath2` 登录, 可以通过 `Github` `Authentik` 等第三方登录, 详情查看 [OAuth2 第三方登录](https://temp-mail-docs.awsl.uk/zh/guide/feature/user-oauth2.html)
+- feat: support `Oath2` 登录, 可以通过 `Github` `Authentik` 等第三方登录, 详情查看 [OAuth2 第三方登录](https://cf-mail-docs.hatoolset.com/zh/guide/feature/user-oauth2.html)
 
 ## v0.7.2
 
@@ -145,7 +145,7 @@ DB changes: 增加用户角色表, 需要执行 `db/2024-07-14-patch.sql` 更新
 
 ### Changes
 
-worker 配置文件新增 `DEFAULT_DOMAINS`, `USER_ROLES`, `USER_DEFAULT_ROLE`, 具体查看文档 [worker配置](https://temp-mail-docs.awsl.uk/zh/guide/cli/worker.html#%E4%BF%AE%E6%94%B9-wrangler-toml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+worker 配置文件新增 `DEFAULT_DOMAINS`, `USER_ROLES`, `USER_DEFAULT_ROLE`, 具体查看文档 [worker配置](https://cf-mail-docs.hatoolset.com/zh/guide/cli/worker.html#%E4%BF%AE%E6%94%B9-wrangler-toml-%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
 
 - 移除 `apiV1` 相关代码和相关的数据库表
 - 更新 `admin/statistics` api, 添加用户统计信息
@@ -163,13 +163,13 @@ worker 配置文件新增 `DEFAULT_DOMAINS`, `USER_ROLES`, `USER_DEFAULT_ROLE`, 
 - 修复 smtp imap proxy sever 的一些 bug
 - 完善用户/admin 删除收件箱/发件箱的功能
 - admin 可以删除 发件权限记录
-- 添加中文邮件别名配置 `DOMAIN_LABELS` [文档](https://temp-mail-docs.awsl.uk/zh/guide/cli/worker.html)
+- 添加中文邮件别名配置 `DOMAIN_LABELS` [文档](https://cf-mail-docs.hatoolset.com/zh/guide/cli/worker.html)
 - 移除 `mail channels` 相关代码
 - github actions 增加 `FRONTEND_BRANCH` 变量用于指定部署的分支 (#324)
 
 ## v0.5.1
 
-- 添加 `mail-parser-wasm-worker` 用于 worker 解析邮件, [文档](https://temp-mail-docs.awsl.uk/zh/guide/feature/mail_parser_wasm_worker.html)
+- 添加 `mail-parser-wasm-worker` 用于 worker 解析邮件, [文档](https://cf-mail-docs.hatoolset.com/zh/guide/feature/mail_parser_wasm_worker.html)
 - 添加校验用户邮箱长度配置 `MIN_ADDRESS_LEN` 和 `MAX_ADDRESS_LEN`
 - 修复 `pages function` 未转发 `telegram` api 问题
 
@@ -191,7 +191,7 @@ worker 配置文件新增 `DEFAULT_DOMAINS`, `USER_ROLES`, `USER_DEFAULT_ROLE`, 
 - UI lazy load 懒加载
 - telegram bot 添加用户全局推送功能(admin 用户)
 - 增加对 cloudflare verified 用户发送邮件
-- 增加使用 `resend` 发送邮件, `resend` 提供 http 和 smtp api, 使用更加方便, 文档: https://temp-mail-docs.awsl.uk/zh/guide/config-send-mail.html
+- 增加使用 `resend` 发送邮件, `resend` 提供 http 和 smtp api, 使用更加方便, 文档: https://cf-mail-docs.hatoolset.com/zh/guide/config-send-mail.html
 
 ## v0.4.4
 
@@ -223,7 +223,7 @@ worker 配置文件新增 `DEFAULT_DOMAINS`, `USER_ROLES`, `USER_DEFAULT_ROLE`, 
 
 - 修复 smtp imap proxy sever 的一些 bug
 - 修复 UI 界面文字错误, 界面增加版本号
-- 增加  telegram bot 文档 https://temp-mail-docs.awsl.uk/zh/guide/feature/telegram.html
+- 增加  telegram bot 文档 https://cf-mail-docs.hatoolset.com/zh/guide/feature/telegram.html
 
 * fix: imap server by @dreamhunter2333 in https://github.com/dreamhunter2333/cloudflare_temp_email/pull/227
 * fix: Maintenance wrong label by @dreamhunter2333 in https://github.com/dreamhunter2333/cloudflare_temp_email/pull/229

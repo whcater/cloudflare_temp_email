@@ -39,7 +39,7 @@ wrangler secret put RESEND_TOKEN_DREAMHUNTER2333_XYZ
 
 ```json
 {
-    "awsl.uk": {
+    "hatoolset.com": {
         "host": "smtp.xxx.com",
         "port": 465,
         "secure": true,

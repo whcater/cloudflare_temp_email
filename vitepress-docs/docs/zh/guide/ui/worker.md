@@ -35,14 +35,14 @@
     >
     > 注意字符串格式的变量的最外层的引号是不需要的
     >
-    > 对于 `USER_ROLES` 请配置为此格式 `[{"domains":["awsl.uk","dreamhunter2333.xyz"],"role":"vip","prefix":"vip"},{"domains":["awsl.uk","dreamhunter2333.xyz"],"role":"admin","prefix":""}]`
+    > 对于 `USER_ROLES` 请配置为此格式 `[{"domains":["hatoolset.com","dreamhunter2333.xyz"],"role":"vip","prefix":"vip"},{"domains":["hatoolset.com","dreamhunter2333.xyz"],"role":"admin","prefix":""}]`
 
     建议配置的变量列表
 
     | 变量名                     | 类型        | 说明                                       | 示例                                 |
     | -------------------------- | ----------- | ------------------------------------------ | ------------------------------------ |
     | `PREFIX`                   | 文本        | 新建邮箱名称默认前缀，不需要前缀可不配置   | `tmp`                                |
-    | `DOMAINS`                  | JSON        | 用于临时邮箱的所有域名, 支持多个域名       | `["awsl.uk", "dreamhunter2333.xyz"]` |
+    | `DOMAINS`                  | JSON        | 用于临时邮箱的所有域名, 支持多个域名       | `["hatoolset.com", "dreamhunter2333.xyz"]` |
     | `JWT_SECRET`               | 文本/Secret | 用于生成 jwt 的密钥, jwt 用于登录以及鉴权  | `xxx`                                |
     | `ADMIN_PASSWORDS`          | JSON        | admin 控制台密码, 不配置则不允许访问控制台 | `["123", "456"]`                     |
     | `ENABLE_USER_CREATE_EMAIL` | 文本/JSON   | 是否允许用户创建邮箱, 不配置则不允许       | `true`                               |

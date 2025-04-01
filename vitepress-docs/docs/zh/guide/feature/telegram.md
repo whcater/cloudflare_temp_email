@@ -49,7 +49,7 @@ pnpm wrangler secret put TELEGRAM_BOT_TOKEN
 >
 > 修改压缩包里面的 index-xxx.js 文件 ，xx 是随机的字符串
 >
-> 搜索 `https://temp-email-api.xxx.xxx` ，替换成你worker 的域名，然后部署新的zip文件
+> 搜索 `https://cf-mail-api.xxx.xxx` ，替换成你worker 的域名，然后部署新的zip文件
 
 ### 命令行部署
 

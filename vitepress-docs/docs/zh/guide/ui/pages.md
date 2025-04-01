@@ -22,7 +22,7 @@ const generate = async () => {
                 console.log(relativePath);
                 if (relativePath.startsWith("assets/index-") && relativePath.endsWith(".js")){
                     let content = await zipEntry.async("string");
-                    content = content.replace("https://temp-email-api.xxx.xxx", domain.value);
+                    content = content.replace("https://cf-mail-api.xxx.xxx", domain.value);
                     target_path = relativePath;
                     zip.file(relativePath, content);
                     break;
@@ -51,8 +51,8 @@ const generate = async () => {
     ![pages](/ui_install/pages.png)
 
 3. 输入部署的 worker 的地址, 地址不要带 `/`，点击生成，成功会出现下载按钮，你会得到一个 zip 包
-    - 此处 worker 域名为后端 api 的域名，比如我部署在 `https://temp-email-api.awsl.uk`，则填写 `https://temp-email-api.awsl.uk`
-    - 如果你的域名是 `https://temp-email-api.xxx.workers.dev`，则填写 `https://temp-email-api.xxx.workers.dev`
+    - 此处 worker 域名为后端 api 的域名，比如我部署在 `https://cf-mail-api.hatoolset.com`，则填写 `https://cf-mail-api.hatoolset.com`
+    - 如果你的域名是 `https://cf-mail-api.xxx.workers.dev`，则填写 `https://cf-mail-api.xxx.workers.dev`
 
     <div :class="$style.container">
         <input :class="$style.input" type="text" v-model="domain" placeholder="请输入地址"></input>
@@ -65,7 +65,7 @@ const generate = async () => {
     >
     > 修改压缩包里面的 index-xxx.js 文件 ，xx 是随机的字符串
     >
-    > 搜索 `https://temp-email-api.xxx.xxx` ，替换成你worker 的域名，然后部署新的zip文件
+    > 搜索 `https://cf-mail-api.xxx.xxx` ，替换成你worker 的域名，然后部署新的zip文件
 
 4. 选择 `Pages`，点击 `Create Pages`, 修改名称，上传下载的 zip 包，然后点击 `Deploy`
 

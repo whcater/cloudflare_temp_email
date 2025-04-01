@@ -17,11 +17,11 @@ export default defineConfig({
     ['meta', { property: 'og:locale', content: 'Temp Mail Doc' }],
     ['meta', { property: 'og:title', content: 'Temp Mail Doc' }],
     ['meta', { property: 'og:site_name', content: 'Temp Mail' }],
-    ['meta', { property: 'og:image', content: 'https://temp-mail-docs.awsl.uk/logo.png' }],
-    ['meta', { property: 'og:url', content: 'https://temp-mail-docs.awsl.uk' }],
+    ['meta', { property: 'og:image', content: 'https://cf-mail-docs.hatoolset.com/logo.png' }],
+    ['meta', { property: 'og:url', content: 'https://cf-mail-docs.hatoolset.com' }],
   ],
   sitemap: {
-    hostname: 'https://temp-mail-docs.awsl.uk',
+    hostname: 'https://cf-mail-docs.hatoolset.com',
     transformItems(items) {
       return items.filter((item) => !item.url.includes('migration'))
     }

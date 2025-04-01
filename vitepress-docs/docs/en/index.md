@@ -8,7 +8,7 @@ hero:
   actions:
   - theme: brand
     text: Try it now
-    link: https://mail.awsl.uk/en
+    link: https://mail.hatoolset.com/en
   - theme: alt
     text: command line deployment
     link: /en/cli

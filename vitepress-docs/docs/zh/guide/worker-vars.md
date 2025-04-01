@@ -7,7 +7,7 @@
 
 | 变量名                     | 类型        | 说明                                       | 示例                                 |
 | -------------------------- | ----------- | ------------------------------------------ | ------------------------------------ |
-| `DOMAINS`                  | JSON        | 用于临时邮箱的所有域名, 支持多个域名       | `["awsl.uk", "dreamhunter2333.xyz"]` |
+| `DOMAINS`                  | JSON        | 用于临时邮箱的所有域名, 支持多个域名       | `["hatoolset.com", "dreamhunter2333.xyz"]` |
 | `JWT_SECRET`               | 文本/Secret | 用于生成 jwt 的密钥, jwt 用于登录以及鉴权  | `xxx`                                |
 | `ADMIN_PASSWORDS`          | JSON        | admin 控制台密码, 不配置则不允许访问控制台 | `["123", "456"]`                     |
 | `ENABLE_USER_CREATE_EMAIL` | 文本/JSON   | 是否允许用户创建邮箱, 不配置则不允许       | `true`                               |
@@ -29,8 +29,8 @@
 | `MAX_ADDRESS_LEN`      | 数字      | `邮箱名称` 的最大长度                                                                                                             | `30`                                      |
 | `ADDRESS_CHECK_REGEX`  | 文本      | `邮箱名称` 的正则表达式, 只用于检查                                                                                               | `^(?!.*admin).*`                          |
 | `ADDRESS_REGEX`        | 文本      | `邮箱名称` 替换非法符号的正则表达式, 不在其中的符号将被替换，如果不设置，默认为 `[^a-z0-9]`, 需谨慎使用, 有些符号可能导致无法收件 | `[^a-z0-9]`                               |
-| `DEFAULT_DOMAINS`      | JSON      | 默认用户可用的域名(未登录或未分配角色的用户)                                                                                      | `["awsl.uk", "dreamhunter2333.xyz"]`      |
-| `DOMAIN_LABELS`        | JSON      | 对于中文域名，可以使用 DOMAIN_LABELS 显示域名的中文展示名称                                                                       | `["中文.awsl.uk", "dreamhunter2333.xyz"]` |
+| `DEFAULT_DOMAINS`      | JSON      | 默认用户可用的域名(未登录或未分配角色的用户)                                                                                      | `["hatoolset.com", "dreamhunter2333.xyz"]`      |
+| `DOMAIN_LABELS`        | JSON      | 对于中文域名，可以使用 DOMAIN_LABELS 显示域名的中文展示名称                                                                       | `["中文.hatoolset.com", "dreamhunter2333.xyz"]` |
 | `ENABLE_AUTO_REPLY`    | 文本/JSON | 允许自动回复邮件                                                                                                                  | `true`                                    |
 | `DEFAULT_SEND_BALANCE` | 文本/JSON | 默认发送邮件余额，如果不设置，将为 0                                                                                              | `1`                                       |
 
@@ -58,7 +58,7 @@
 | 变量名           | 类型      | 说明                                  | 示例               |
 | ---------------- | --------- | ------------------------------------- | ------------------ |
 | `ENABLE_WEBHOOK` | 文本/JSON | 是否启用 webhook                      | `true`             |
-| `FRONTEND_URL`   | 文本      | 前端地址，用于发送 webhook 的邮件 url | `https://xxxx.xxx` |
+| `FRONTEND_URL`   | 文本      | 前端地址，用于发送 webhook 的邮件 url | `https://xxx.xxx` |
 
 > [!NOTE]
 > webhook 功能需要解析邮件，免费版 CPU 有限，可能会导致大邮件解析超时
@@ -82,9 +82,9 @@
 > - 如果 `domains` 为空将使用 `DEFAULT_DOMAINS`
 > - 如果 prefix 为 null 将使用默认前缀, 如果 prefix 为空字符串将不使用前缀
 >
-> 通过用户界面部署时 `USER_ROLES` 请配置为此格式 `[{"domains":["awsl.uk","dreamhunter2333.xyz"],"role":"vip","prefix":"vip"},{"domains":["awsl.uk","dreamhunter2333.xyz"],"role":"admin","prefix":""}]`
+> 通过用户界面部署时 `USER_ROLES` 请配置为此格式 `[{"domains":["hatoolset.com","dreamhunter2333.xyz"],"role":"vip","prefix":"vip"},{"domains":["hatoolset.com","dreamhunter2333.xyz"],"role":"admin","prefix":""}]`
 >
-> CLI 部署时 `USER_ROLES` 请参考 `worker/wrangler.toml.template` 配置为此格式 `[{ domains = ["awsl.uk", "dreamhunter2333.xyz"], role = "vip", prefix = "vip" }, { domains = ["awsl.uk", "dreamhunter2333.xyz"], role = "admin", prefix = "" }]`
+> CLI 部署时 `USER_ROLES` 请参考 `worker/wrangler.toml.template` 配置为此格式 `[{ domains = ["hatoolset.com", "dreamhunter2333.xyz"], role = "vip", prefix = "vip" }, { domains = ["hatoolset.com", "dreamhunter2333.xyz"], role = "admin", prefix = "" }]`
 
 ## 网页相关变量
 

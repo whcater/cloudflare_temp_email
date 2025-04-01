@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://temp-mail-docs.awsl.uk" target="_blank">
+  <a href="https://cf-mail-docs.hatoolset.com" target="_blank">
     <img alt="docs" src="https://img.shields.io/badge/docs-grey?style=for-the-badge&logo=vitepress">
   </a>
   <a href="https://github.com/dreamhunter2333/cloudflare_temp_email/releases/latest" target="_blank">
@@ -29,22 +29,22 @@
 
 > 本项目仅供学习和个人用途，请勿将其用于任何违法行为，否则后果自负。
 
-## [查看部署文档](https://temp-mail-docs.awsl.uk)
+## [查看部署文档](https://cf-mail-docs.hatoolset.com)
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://temp-mail-docs.awsl.uk/zh/guide/actions/github-action.html)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://cf-mail-docs.hatoolset.com/zh/guide/actions/github-action.html)
 
-[Github Action 部署文档](https://temp-mail-docs.awsl.uk/zh/guide/actions/github-action.html)
+[Github Action 部署文档](https://cf-mail-docs.hatoolset.com/zh/guide/actions/github-action.html)
 
-[English Docs](https://temp-mail-docs.awsl.uk/en/)
+[English Docs](https://cf-mail-docs.hatoolset.com/en/)
 
 ## [CHANGELOG](CHANGELOG.md)
 
-## [在线演示](https://mail.awsl.uk/)
+## [在线演示](https://mail.hatoolset.com/)
 
 |                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Backend](https://temp-email-api.awsl.uk/) | [![Deploy Backend Production](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/backend_deploy.yaml/badge.svg)](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/backend_deploy.yaml) ![](https://uptime.aks.awsl.icu/api/badge/10/status) ![](https://uptime.aks.awsl.icu/api/badge/10/uptime) ![](https://uptime.aks.awsl.icu/api/badge/10/ping) ![](https://uptime.aks.awsl.icu/api/badge/10/avg-response) ![](https://uptime.aks.awsl.icu/api/badge/10/cert-exp) ![](https://uptime.aks.awsl.icu/api/badge/10/response) |
-| [Frontend](https://mail.awsl.uk/)          | [![Deploy Frontend](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/frontend_deploy.yaml/badge.svg)](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/frontend_deploy.yaml) ![](https://uptime.aks.awsl.icu/api/badge/12/status) ![](https://uptime.aks.awsl.icu/api/badge/12/uptime) ![](https://uptime.aks.awsl.icu/api/badge/12/ping) ![](https://uptime.aks.awsl.icu/api/badge/12/avg-response) ![](https://uptime.aks.awsl.icu/api/badge/12/cert-exp) ![](https://uptime.aks.awsl.icu/api/badge/12/response)         |
+| [Backend](https://cf-mail-api.hatoolset.com/) | [![Deploy Backend Production](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/backend_deploy.yaml/badge.svg)](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/backend_deploy.yaml) ![](https://uptime.aks.awsl.icu/api/badge/10/status) ![](https://uptime.aks.awsl.icu/api/badge/10/uptime) ![](https://uptime.aks.awsl.icu/api/badge/10/ping) ![](https://uptime.aks.awsl.icu/api/badge/10/avg-response) ![](https://uptime.aks.awsl.icu/api/badge/10/cert-exp) ![](https://uptime.aks.awsl.icu/api/badge/10/response) |
+| [Frontend](https://mail.hatoolset.com/)          | [![Deploy Frontend](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/frontend_deploy.yaml/badge.svg)](https://github.com/dreamhunter2333/cloudflare_temp_email/actions/workflows/frontend_deploy.yaml) ![](https://uptime.aks.awsl.icu/api/badge/12/status) ![](https://uptime.aks.awsl.icu/api/badge/12/uptime) ![](https://uptime.aks.awsl.icu/api/badge/12/ping) ![](https://uptime.aks.awsl.icu/api/badge/12/avg-response) ![](https://uptime.aks.awsl.icu/api/badge/12/cert-exp) ![](https://uptime.aks.awsl.icu/api/badge/12/response)         |
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=dreamhunter2333/cloudflare_temp_email&type=Date&theme=dark" />

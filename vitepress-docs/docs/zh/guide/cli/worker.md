@@ -33,7 +33,7 @@ compatibility_flags = [ "nodejs_compat" ]
 
 # 如果你想使用自定义域名，你需要添加 routes 配置
 # routes = [
-#  { pattern = "temp-email-api.xxxxx.xyz", custom_domain = true },
+#  { pattern = "cf-mail-api.xxxxx.xyz", custom_domain = true },
 # ]
 
 # 如果你想要使用定时任务清理邮件，取消下面的注释，并修改 cron 表达式
